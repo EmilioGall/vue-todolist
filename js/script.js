@@ -23,7 +23,7 @@ createApp({
                text: "Summit updateto mobile storefronts",
                toggleDone: true,
             },
-         ]
+         ],
 
       };
 

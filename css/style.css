@@ -130,12 +130,12 @@
 .container-tags {
     display: inline-block;
     vertical-align: middle;
-    color:  rgba(237,242,247,255);
+    color:  lightgray;
     height: 25px;
     border-radius: 12.5px;
     padding: 0px 10px;
     line-height: 25px;
     text-align: end;
     background-color: white;
-    border: 1px solid rgba(237,242,247,255) ;
+    border: 1px solid lightgray ;
 }

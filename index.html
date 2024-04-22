@@ -69,13 +69,24 @@
 
                         <ul class="clean-lists">
 
-                            <li class="white-bars">
+                            <li class="white-bars" v-for="(curTask, indexTask) in tasks">
 
                                 <div>
 
-                                    <div class="stamp-style done">&#10004;</div>
+                                    <div class="stamp-style" :class="curTask.toggleDone ? 'done' : 'pending'">
 
-                                    <span class="text-done">Recruiting blog post</span>
+                                        <span v-if="curTask.toggleDone">
+                                            &#10004;
+                                        </span>
+                                        <span v-else>
+                                            &#10008;
+                                        </span>
+
+                                    </div>
+
+                                    <span :class="curTask.toggleDone ? 'text-done' : 'text-pending'">
+                                        {{ curTask.text }}
+                                    </span>
 
                                 </div>
 
@@ -83,24 +94,6 @@
                                     <i class="fa-regular fa-trash-can"></i>
                                 </em>
 
-                            </li>
-
-                            <li class="white-bars">
-                                <div class="stamp-style done">&#10004;</div>
-                                <span class="text-done">Mobile App launch</span>
-                                <em class="container-tags q1 text-done">Q1 Goals</em>
-                            </li>
-
-                            <li class="white-bars">
-                                <div class="stamp-style pending">&#10008;</div>
-                                <span class="text-pending">Interview John H.</span>
-                                <em class="container-tags recruiting text-pending">Recruiting</em>
-                            </li>
-
-                            <li class="white-bars">
-                                <div class="stamp-style done">&#10004;</div>
-                                <span class="text-done">Summit updateto mobile storefronts</span>
-                                <em class="container-tags mobile text-done">Mobile</em>
                             </li>
 
                         </ul>
