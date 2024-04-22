@@ -73,6 +73,12 @@ createApp({
 
       },
 
+      deleteTask: function(clickedIndex){
+
+         this.tasks.splice(clickedIndex,1)
+
+      },
+
    },
 
 }).mount("#app");
