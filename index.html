@@ -47,11 +47,14 @@
     
                 <Section class="input-section">
     
-                    <input class="input-bars" type="text" placeholder=" es: Fare la spesa...">
+                    <input class="input-bars" type="text" placeholder=" es: Fare la spesa..." v-model="newTask">
     
-                    <button class="buttons"> Add Task </button>
+                    <button class="buttons" @click="addTask"> Add Task </button>
     
+                    <span class="error-message" v-if="errorMessage">Please enter a task correctly</span>
+
                 </Section>
+
     
             </div>
             <!-- /Input Section -->
