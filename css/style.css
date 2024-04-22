@@ -145,3 +145,7 @@
     color: red;
     margin: auto 10px;
 }
+
+.clickable:hover {
+    cursor: pointer;
+}

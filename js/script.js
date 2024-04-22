@@ -13,19 +13,19 @@ createApp({
          tasks: [
             {
                text: "Recruiting blog post",
-               toggleDone: true,
+               stateDone: true,
             },
             {
                text: "Mobile App launch",
-               toggleDone: true,
+               stateDone: true,
             },
             {
                text: "Interview John H.",
-               toggleDone: false,
+               stateDone: false,
             },
             {
                text: "Summit updateto mobile storefronts",
-               toggleDone: true,
+               stateDone: true,
             },
          ],
 
@@ -43,7 +43,7 @@ createApp({
 
       addTask: function(){
 
-         this.newTask = this.newTask.trim()
+         // this.newTask = this.newTask.trim()
 
          if (this.newTask === "") {
 
@@ -55,7 +55,7 @@ createApp({
             const newTaskObj = {
 
                text: this.newTask,
-               toggleDone: false,
+               stateDone: false,
             };
 
             this.tasks.push(newTaskObj);
@@ -66,6 +66,13 @@ createApp({
          };
 
       },
+
+      toggleDone: function(clickedIndex){
+
+         this.tasks[clickedIndex].stateDone = !this.tasks[clickedIndex].stateDone
+
+      },
+
    },
 
 }).mount("#app");

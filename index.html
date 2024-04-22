@@ -47,9 +47,11 @@
     
                 <Section class="input-section">
     
-                    <input class="input-bars" type="text" placeholder=" es: Fare la spesa..." v-model="newTask">
+                    <input class="input-bars" type="text" placeholder=" es: Fare la spesa..." 
+                    v-model.trim="newTask"
+                    @keyup.enter="addTask">
     
-                    <button class="buttons" @click="addTask"> Add Task </button>
+                    <button class="buttons clickable" @click="addTask"> Add Task </button>
     
                     <span class="error-message" v-if="errorMessage">Please enter a task correctly</span>
 
@@ -65,20 +67,20 @@
 
                 <Section class="lists-spaces">
     
-
                     <div>
                         
                         <strong>&#10148; TASKS LIST</strong>
 
                         <ul class="clean-lists">
 
-                            <li class="white-bars" v-for="(curTask, indexTask) in tasks">
+                            <!-- Single Task -->
+                            <li class="white-bars" v-for="(curTask, taskIndex) in tasks">
 
-                                <div>
+                                <div @click="toggleDone(taskIndex)" class="clickable">
 
-                                    <div class="stamp-style" :class="curTask.toggleDone ? 'done' : 'pending'">
+                                    <div class="stamp-style" :class="curTask.stateDone ? 'done' : 'pending'">
 
-                                        <span v-if="curTask.toggleDone">
+                                        <span v-if="curTask.stateDone">
                                             &#10004;
                                         </span>
                                         <span v-else>
@@ -87,23 +89,25 @@
 
                                     </div>
 
-                                    <span :class="curTask.toggleDone ? 'text-done' : 'text-pending'">
+                                    <span :class="curTask.stateDone ? 'text-done' : 'text-pending'">
                                         {{ curTask.text }}
                                     </span>
 
                                 </div>
 
-                                <em class="container-tags">
+                                <em class="clickable container-tags">
                                     <i class="fa-regular fa-trash-can"></i>
                                 </em>
 
                             </li>
+                            <!-- /Single Task -->
 
                         </ul>
 
                     </div>
         
                 </Section>
+
             </div>
             <!-- /List Section -->
     
