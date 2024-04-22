@@ -1,0 +1,160 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.grey-boxes {
+    background-color: rgba(237,242,247,255);
+}
+
+.centered-container {
+    text-align: center;
+}
+
+
+/* HEADER */
+
+.logo-title {
+    padding: 5px;
+    margin-bottom: 30px;
+
+}
+
+
+/* MAIN */
+
+.container {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 2px;
+}
+
+.up {
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+.down {
+    border-radius: 0px 0px 10px 10px;
+    padding: 50px 100px 10px;
+}
+
+/* Input Section */
+
+.input-section {
+    text-align: center;
+}
+
+.input-bars {
+    height: 25px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgba(228,233,237,255);
+    vertical-align: middle;
+}
+
+.buttons {
+    height: 25px;
+    padding: 2px 5px;
+    background-color: rgba(20,170,245,255);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    vertical-align: middle;
+}
+
+/* Lists Section */
+
+.clean-lists {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.lists-spaces {
+    margin: auto;
+}
+
+.white-bars {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+/* Stamps */
+
+.stamp-style {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid;
+    text-align: center;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+.done {
+    color: rgba(73,206,182,255);
+    border-color: rgba(73,206,182,255);
+}
+
+.pending {
+    color: rgba(255,56,56,255);
+    border-color: rgba(255,56,56,255);
+}
+
+/* Text */
+
+.text-done {
+    text-decoration: line-through;
+    color: grey;
+
+}
+
+.text-pending {
+    display: inline-block;
+
+}
+
+/* Tags */
+
+.container-tags {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    color: white;
+    height: 25px;
+    border-radius: 12.5px;
+    padding: 0px 10px;
+    line-height: 25px;
+}
+
+.editorial {
+    background-color: rgba(9,169,237,255);
+}
+
+.q1 {
+    background-color: rgba(171,93,230,255);
+}
+
+.recruiting {
+    background-color: rgba(44,198,171,255);
+}
+
+.mobile {
+    background-color: rgba(255,155,0,255);
+}
+
+.website {
+    background-color: rgba(236,74,157,255);
+}
+
+.sales {
+    background-color: rgba(163,209,22,255);
+}

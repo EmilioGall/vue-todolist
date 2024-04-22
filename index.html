@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font-Awesome cdn v6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- /Font-Awesome cdn v6 -->
+
+    <!-- Link Vue JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- /Link Vue JS -->
+
+    <!-- Link Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- /Link Custom Style -->
+
+    <title>Toboolist VueJS</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="grey-boxes">
+
+        <div class="logo-title centered-container">
+            <img src="img/logo.png" alt="">
+        </div>
+
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main>
+
+        <!-- Input Section -->
+        <div class="grey-boxes container up">
+
+            <Section class="input-section">
+
+                <input class="input-bars" type="text" placeholder=" es: Fare la spesa...">
+
+                <button class="buttons"> Add Task </button>
+
+            </Section>
+
+        </div>
+        <!-- /Input Section -->
+
+
+        <!-- List Section -->
+        <div class="grey-boxes container down">
+            <Section class="lists-spaces">
+
+                <ol class="clean-lists">
+                    <li><strong>&#10148; TASK PRECEDENTI</strong>
+                        <ul class="clean-lists">
+                            <li class="white-bars">
+                                <div class="stamp-style done">&#10004;</div>
+                                <span class="text-done">Quarterly Newsletter</span>
+                                <em class="container-tags editorial text-done">Editorial</em>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><strong>&#10148; OGGI</strong>
+                        <ul class="clean-lists">
+                            <li class="white-bars">
+                                <div class="stamp-style done">&#10004;</div>
+                                <span class="text-done">Recruiting blog post</span>
+                                <em class="container-tags editorial text-done">Editorial</em>
+                            </li>
+                            <li class="white-bars">
+                                <div class="stamp-style done">&#10004;</div>
+                                <span class="text-done">Mobile App launch</span>
+                                <em class="container-tags q1 text-done">Q1 Goals</em>
+                            </li>
+                            <li class="white-bars">
+                                <div class="stamp-style pending">&#10008;</div>
+                                <span class="text-pending">Interview John H.</span>
+                                <em class="container-tags recruiting text-pending">Recruiting</em>
+                            </li>
+                            <li class="white-bars">
+                                <div class="stamp-style done">&#10004;</div>
+                                <span class="text-done">Summit updateto mobile storefronts</span>
+                                <em class="container-tags mobile text-done">Mobile</em>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><strong>&#10148; PROSSIMI GIORNI</strong>
+                        <ul class="clean-lists">
+                            <li class="white-bars">
+                                <div class="stamp-style pending">&#10008;</div>
+                                <span class="text-pending">Schedule meeting with Alex</span>
+                            </li>
+                            <li class="white-bars">
+                                <div class="stamp-style done">&#10004;</div>
+                                <span class="text-done">Home page refresh</span>
+                                <em class="container-tags website text-done">Website</em>
+                            </li>
+                            <li class="white-bars">
+                                <div class="stamp-style done">&#10004;</div>
+                                <span class="text-done">Onboard new sales teams members</span>
+                                <em class="container-tags sales text-done">Sales</em>
+                            </li>
+                            <li class="white-bars">
+                                <div class="stamp-style done">&#10004;</div>
+                                <span class="text-done">Review editorial calendar</span>
+                                <em class="container-tags editorial text-done">Editorial</em>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </Section>
+        </div>
+        <!-- /List Section -->
+
+    </main>
+    <!-- /Main -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
