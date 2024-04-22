@@ -24,105 +24,99 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="grey-boxes">
+    <!-- VueJS App Container -->
+    <div id="app">
 
-        <div class="logo-title centered-container">
-            <img src="img/logo.png" alt="">
-        </div>
+        <!-- Header -->
+        <header class="grey-boxes">
+    
+            <div class="logo-title centered-container">
 
-    </header>
-    <!-- /Header -->
+                <img src="img/logo.png" alt="">
 
-    <!-- Main -->
-    <main>
+            </div>
+    
+        </header>
+        <!-- /Header -->
+    
+        <!-- Main -->
+        <main>
+    
+            <!-- Input Section -->
+            <div class="grey-boxes container up">
+    
+                <Section class="input-section">
+    
+                    <input class="input-bars" type="text" placeholder=" es: Fare la spesa...">
+    
+                    <button class="buttons"> Add Task </button>
+    
+                </Section>
+    
+            </div>
+            <!-- /Input Section -->
+    
+    
+            <!-- List Section -->
+            <div class="grey-boxes container down">
 
-        <!-- Input Section -->
-        <div class="grey-boxes container up">
+                <Section class="lists-spaces">
+    
 
-            <Section class="input-section">
+                    <div>
+                        
+                        <strong>&#10148; TASKS LIST</strong>
 
-                <input class="input-bars" type="text" placeholder=" es: Fare la spesa...">
-
-                <button class="buttons"> Add Task </button>
-
-            </Section>
-
-        </div>
-        <!-- /Input Section -->
-
-
-        <!-- List Section -->
-        <div class="grey-boxes container down">
-            <Section class="lists-spaces">
-
-                <ol class="clean-lists">
-                    <li><strong>&#10148; TASK PRECEDENTI</strong>
                         <ul class="clean-lists">
-                            <li class="white-bars">
-                                <div class="stamp-style done">&#10004;</div>
-                                <span class="text-done">Quarterly Newsletter</span>
-                                <em class="container-tags editorial text-done">Editorial</em>
-                            </li>
-                        </ul>
-                    </li>
 
-                    <li><strong>&#10148; OGGI</strong>
-                        <ul class="clean-lists">
                             <li class="white-bars">
-                                <div class="stamp-style done">&#10004;</div>
-                                <span class="text-done">Recruiting blog post</span>
-                                <em class="container-tags editorial text-done">Editorial</em>
+
+                                <div>
+
+                                    <div class="stamp-style done">&#10004;</div>
+
+                                    <span class="text-done">Recruiting blog post</span>
+
+                                </div>
+
+                                <em class="container-tags">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </em>
+
                             </li>
+
                             <li class="white-bars">
                                 <div class="stamp-style done">&#10004;</div>
                                 <span class="text-done">Mobile App launch</span>
                                 <em class="container-tags q1 text-done">Q1 Goals</em>
                             </li>
+
                             <li class="white-bars">
                                 <div class="stamp-style pending">&#10008;</div>
                                 <span class="text-pending">Interview John H.</span>
                                 <em class="container-tags recruiting text-pending">Recruiting</em>
                             </li>
+
                             <li class="white-bars">
                                 <div class="stamp-style done">&#10004;</div>
                                 <span class="text-done">Summit updateto mobile storefronts</span>
                                 <em class="container-tags mobile text-done">Mobile</em>
                             </li>
+
                         </ul>
-                    </li>
 
-                    <li><strong>&#10148; PROSSIMI GIORNI</strong>
-                        <ul class="clean-lists">
-                            <li class="white-bars">
-                                <div class="stamp-style pending">&#10008;</div>
-                                <span class="text-pending">Schedule meeting with Alex</span>
-                            </li>
-                            <li class="white-bars">
-                                <div class="stamp-style done">&#10004;</div>
-                                <span class="text-done">Home page refresh</span>
-                                <em class="container-tags website text-done">Website</em>
-                            </li>
-                            <li class="white-bars">
-                                <div class="stamp-style done">&#10004;</div>
-                                <span class="text-done">Onboard new sales teams members</span>
-                                <em class="container-tags sales text-done">Sales</em>
-                            </li>
-                            <li class="white-bars">
-                                <div class="stamp-style done">&#10004;</div>
-                                <span class="text-done">Review editorial calendar</span>
-                                <em class="container-tags editorial text-done">Editorial</em>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
+                    </div>
+        
+                </Section>
+            </div>
+            <!-- /List Section -->
+    
+        </main>
+        <!-- /Main -->
 
-            </Section>
-        </div>
-        <!-- /List Section -->
+    </div>
+    <!-- /VueJS App Container -->
 
-    </main>
-    <!-- /Main -->
 
     <script src="./js/script.js"></script>
 

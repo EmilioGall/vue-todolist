@@ -82,8 +82,11 @@
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-    margin: 5px;
+    margin: 5px auto;
     vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Stamps */
@@ -114,12 +117,12 @@
 .text-done {
     text-decoration: line-through;
     color: grey;
-
+    margin-left: 10px;
 }
 
 .text-pending {
     display: inline-block;
-
+    margin-left: 10px;
 }
 
 /* Tags */
@@ -127,34 +130,12 @@
 .container-tags {
     display: inline-block;
     vertical-align: middle;
-    font-style: normal;
-    color: white;
+    color:  rgba(237,242,247,255);
     height: 25px;
     border-radius: 12.5px;
     padding: 0px 10px;
     line-height: 25px;
-}
-
-.editorial {
-    background-color: rgba(9,169,237,255);
-}
-
-.q1 {
-    background-color: rgba(171,93,230,255);
-}
-
-.recruiting {
-    background-color: rgba(44,198,171,255);
-}
-
-.mobile {
-    background-color: rgba(255,155,0,255);
-}
-
-.website {
-    background-color: rgba(236,74,157,255);
-}
-
-.sales {
-    background-color: rgba(163,209,22,255);
+    text-align: end;
+    background-color: white;
+    border: 1px solid rgba(237,242,247,255) ;
 }
